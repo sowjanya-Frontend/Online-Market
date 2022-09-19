@@ -1,0 +1,65 @@
+/*Css related to card layout and list*/
+.header {
+    height: 100px;
+    width: 100%;
+    background-color: #E9EEF6;
+    padding-top: 10px;
+}
+
+.card-container {
+    height: 300px;
+    width: 300px;
+    box-shadow: 0px 3px 50px #A5A5A5;
+}
+
+.card-wrapper {
+    width: 290px;
+    height: 200px;
+    box-shadow: 0px 3px 50px #A5A5A5;
+    display: flex;
+    flex-direction: column;
+    margin: 15px 15px 15px 15px;
+}
+
+.card-top {
+    width: 100%;
+    height: 2%;
+}
+
+.task-holder {
+    width: 100%;
+    height: 98%;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.card-header {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width: 80px;
+    height: 30px;
+    padding: 1px 1px !important;
+    text-align: center;
+}
+
+.task-container {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #F6F7F8;
+    padding: 20px 30px;
+    overflow-y: auto;
+}
+
+.card-toolbar i {
+    padding: 10px;
+}
+
+.txt-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
