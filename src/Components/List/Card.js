@@ -43,6 +43,7 @@ const Card = ({ source, taskObj, index, deleteTask, updateListArray }) => {
     //TO update the item details
     const updateTask = (obj) => {
         updateListArray(obj, index)
+        setModal(!modal);
     }
 
     //Handled the delete item

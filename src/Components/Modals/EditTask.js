@@ -22,7 +22,7 @@ const EditTaskPopup = ({ modal, toggle, updateTask, taskObj }) => {
     const [rates, setRates] = useState([]);
 
     useEffect(() => {
-        if (rates.length == 0) {
+        if (rates.length === 0) {
             axios.get(appSetting.fastForexRatesServiceUrl)
                 .then(response => {
                     setRates(response.data.results);
@@ -52,9 +52,10 @@ const EditTaskPopup = ({ modal, toggle, updateTask, taskObj }) => {
     useEffect(() => {
         setTaskName(taskObj.Name)
         setDescription(taskObj.Description)
-        setAmount1(taskObj.amount1);
-        setCurrency1(taskObj.currency1);
-
+        setAmount1(taskObj.prevPrice);
+        setCurrency1(taskObj.prevCurrency);
+        setAmount2(taskObj.Price);
+        setCurrency2(taskObj.Currency);
     }, [])
 
     function format(number) {

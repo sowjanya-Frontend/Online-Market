@@ -259,3 +259,8 @@ span {
 .user-email {
   line-height: 40px;
 }
+
+.error {
+  color: red;
+  font-size: 10px
+}

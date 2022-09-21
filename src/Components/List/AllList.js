@@ -18,8 +18,8 @@ const AllList = () => {
     }
     return (
         <>
-            <div className="task-container">
-                {allItems && allItems.map((obj, index) => <Card taskObj={obj} index={index} />)}
+            <div className="all-list-view task-container">
+                {allItems && allItems.map((obj, index) => <Card taskObj={obj} index={index} id={index} />)}
             </div>
 
         </>

@@ -23,7 +23,7 @@ const CreateTaskPopup = ({ modal, toggle, save }) => {
 
     //To handle the service call and setting up the items data
     useEffect(() => {
-        if (rates.length == 0) {
+        if (rates.length === 0) {
             axios.get(appSetting.fastForexRatesServiceUrl)
                 .then(response => {
                     setRates(response.data.results);
@@ -61,7 +61,7 @@ const CreateTaskPopup = ({ modal, toggle, save }) => {
         const { name, value } = e.target;
         if (name === "taskName") {
             setTaskName(value);
-        } else if (name == "description") {
+        } else if (name === "description") {
             setDescription(value);
         }
     }
